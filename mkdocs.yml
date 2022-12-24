@@ -1,0 +1,57 @@
+site_name: Lemon Wiki
+
+nav:
+  - 开始:
+      - 简介: index.md
+  - ZSCACM:
+      - 简介: zscacm/index.md
+      - 成员: zscacm/member.md
+      - ICPC: zscacm/icpc.md
+      - CCPC: zscacm/ccpc.md
+      - 广东省赛: zscacm/gdcpc.md
+      - 蓝桥杯: zscacm/blue_bridge_cup.md
+      - CCCC: zscacm/cccc.md
+      - 新生赛: zscacm/freshman_competition.md
+      - 其它: zscacm/other.md
+  - 算法:
+    - 图论:
+      - 分层图: algorithm/graph/layered_graph.md  
+  - 其它: other.md
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.instant
+  language: zh
+
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+      title: 目录
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+extra_javascript:
+  - js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
